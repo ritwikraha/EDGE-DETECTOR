@@ -1,10 +1,9 @@
 import cv2
 import numpy as np
-import scipy.stats
 import math
 
 img = cv2.imread('SAT.jpg',0)
-kernel = np.ones((10,10),np.uint8)#using a kernel to reconstruct the image as per convenience
+kernel = np.ones((2,2),np.uint8)#using a kernel to reconstruct the image as per convenience
 
 """CLOSING OPERATION- is simply the opposite of opening operation in morphological operator
 an OPENING OPERATION- is erosion followed by dilation,it is useful in removal of noises
