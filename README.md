@@ -1,10 +1,10 @@
 # EDGE-DETECTOR #
----
+- - - -
 
 ## Abstract ##
----
+- - - -
 This paper presents an innovative algorithm to efficiently detect edges from an image using Morphological operator and Adaptive Gaussian Thresholding.Proposes an alternative to existing algorithm by use of weighted combination of thresholded images.Edge Detection has been carried out by three methods consecutively. The first is the method of Morphological Gradient to detect outlines from an image by analysis of spatial structures.The next is adaptive gaussian thresholding performed on the inverted outlined image.The third and the final step is the weighted addition of the thresholded and inverted image based on dissimilarity recognised by a Peak-Signal-to-Noise-Ratio function.
----
+- - - -
 
 ### Introduction ###
 
