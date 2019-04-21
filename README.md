@@ -15,6 +15,7 @@ Edge detection is being used in a number of industries for image segmentation an
 ##  ALGORITHM ##
 - - - -
 
+Markup : ![picture alt](https://github.com/ritwikraha/EDGE-DETECTOR/tree/master/img/z-algo.jpg )
 
 
 
