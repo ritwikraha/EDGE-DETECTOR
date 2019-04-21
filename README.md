@@ -12,16 +12,11 @@ Edge detection is being used in a number of industries for image segmentation an
 
 
 - - - -
+##  ALGORITHM ##
+- - - -
 
 
-Algorithm for Edge Detection Using Morphological Operator and Gaussian Thresholding
 
-
-<object data="ALGORITHM.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://yoursite.com/the.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it:</p>
-    </embed>
-</object>
 
 ---
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/164c2a085a9f47da9c83f064186e81de)](https://www.codacy.com/app/rtzdzn/EDGE-DETECTOR?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ritwikraha/EDGE-DETECTOR&amp;utm_campaign=Badge_Grade)
