@@ -16,35 +16,33 @@ Edge detection is being used in a number of industries for image segmentation an
 - - - -
 
 
-Step 1: Start
-Step 2: Input ‘Image’
-Step 3: Define Kernel………………………………………………………………………………(01)
-Step 4: clo=Closing(‘Image’,kernel).......................................................................................(02)
-Step 5: dil=Dilation(clo,kernel)...............................................................................................(03)
-Step 6: grad=Gradient(dil,kernel)...........................................................................................(04)
-Step 7: edge_inv= grad
-Step 8: Procedure psnr(imgO,imgF)
-	8.1: mse=mean()
-	8.2: IF mse==0
-	8.3:	return 100
-	8.4: ELSE
-	8.5:	pix_max=255.0
-	8.6:	return 20*log(pix_max/sqrt(mse))
-Step 9: Procedure thres(imgk)..............................................................................................(05)
-	9.1: imgb=Adaptivethreshold(imgk)
-	9.2: return imgb
-Step 10: imgbinary=thres(edges_inv)
-Step 11: d=psnr(edges_inv,imgbinary)
-Step 12: c=psnr(image,grad)
-Step 13: IF d c
-	13.1: imgF=AddWeighted(imgbinary(0.3),edges_inv(0.7)).........................................(06)
-Step 14: ELSE
-	14.1: imgF=AddWeighted(imgbinary(0.5),edges_inv(0.5)).........................................(07)
-Step 15: Display imgF
-Step 16: End
-
-
-
+* Step 1: Start
+* Step 2: Input ‘Image’
+* Step 3: Define Kernel...............................(01)
+* Step 4: clo=Closing(‘Image’,kernel).................(02)
+* Step 5: dil=Dilation(clo,kernel)....................(03)
+* Step 6: grad=Gradient(dil,kernel)...................(04)
+* Step 7: edge_inv= grad
+* Step 8: Procedure psnr(imgO,imgF)
+*	8.1: mse=mean()
+*	8.2: IF mse==0
+*	8.3:	return 100
+*	8.4: ELSE
+*	8.5:	pix_max=255.0
+*	8.6:	return 20*log(pix_max/sqrt(mse))
+* Step 9: Procedure thres(imgk)......................(05)
+*	9.1: imgb=Adaptivethreshold(imgk)
+*	9.2: return imgb
+* Step 10: imgbinary=thres(edges_inv)
+* Step 11: d=psnr(edges_inv,imgbinary)
+* Step 12: c=psnr(image,grad)
+* Step 13: IF d c
+*	13.1: imgF=AddWeighted(imgbinary(0.3),edges_inv(0.7))...........(06)
+* Step 14: ELSE
+*	14.1: imgF=AddWeighted(imgbinary(0.5),edges_inv(0.5))...........(07)
+* Step 15: Display imgF
+* Step 16: End
+- - - - 
 01- defining a structuring element of size 2X2
 02- refer to 
 03- refer to
