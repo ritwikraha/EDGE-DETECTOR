@@ -17,97 +17,11 @@ Edge detection is being used in a number of industries for image segmentation an
 Algorithm for Edge Detection Using Morphological Operator and Gaussian Thresholding
 
 
-
----
-
-
-Step 1: Start
-
-Step 2: Input ‘Image’
-
-Step 3: Define Kernel………………………………………………………………………………(01)
-
-Step 4: clo=Closing(‘Image’,kernel).......................................................................................(02)
-
-Step 5: dil=Dilation(clo,kernel)...............................................................................................(03)
-
-Step 6: grad=Gradient(dil,kernel)...........................................................................................(04)
-
-Step 7: edge_inv= 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/ALGORITHM0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/ALGORITHM0.png "image_tooltip")
-grad
-
-Step 8: Procedure psnr(imgO,imgF) \
-	8.1: mse=mean(
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/ALGORITHM1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/ALGORITHM1.png "image_tooltip")
-)
-
-	8.2: IF mse==0
-
-	8.3:	return 100
-
-	8.4: ELSE \
-	8.5:	pix_max=255.0
-
-	8.6:	return 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/ALGORITHM2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/ALGORITHM2.png "image_tooltip")
-
-
-Step 9: Procedure thres(imgk)..............................................................................................(05)
-
-	9.1: imgb=Adaptivethreshold(imgk) \
-	9.2: return imgb
-
-Step 10: imgbinary=thres(edges_inv)
-
-Step 11: d=psnr(edges_inv,imgbinary) \
-Step 12: c=psnr(image,grad)
-
-Step 13: IF d
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-c \
-	13.1: imgF=AddWeighted(imgbinary(0.3),edges_inv(0.7)).........................................(06)
-
-Step 14: ELSE \
-	14.1: imgF=AddWeighted(imgbinary(0.5),edges_inv(0.5)).........................................(07) \
-Step 15: Display imgF
-
-Step 16: End
-
-
-
----
-
-
-01- defining a structuring element of size 2X2
-
-02- refer to 
-
-03- refer to
-
-04- refer to
-
-05- refer to 
-
-06- weighted addition in 0.3 and 0.7 proportions
-
-07-weighted addition in equal proportions
-
-
+<object data="ALGORITHM.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://yoursite.com/the.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it:</p>
+    </embed>
+</object>
 
 ---
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/164c2a085a9f47da9c83f064186e81de)](https://www.codacy.com/app/rtzdzn/EDGE-DETECTOR?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ritwikraha/EDGE-DETECTOR&amp;utm_campaign=Badge_Grade)
