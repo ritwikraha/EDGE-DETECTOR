@@ -43,13 +43,14 @@ Edge detection is being used in a number of industries for image segmentation an
 * Step 15: Display imgF
 * Step 16: End
 - - - - 
-01- defining a structuring element of size 2X2
-02- refer to 
-03- refer to
-04- refer to
-05- refer to 
-06- weighted addition in 0.3 and 0.7 proportions
-07-weighted addition in equal proportions
+
+1. defining a structuring element of size 2X2
+2. refer to 
+3. refer to
+4. refer to
+5. refer to 
+6. weighted addition in 0.3 and 0.7 proportions
+7. weighted addition in equal proportions
 
 
 ---
