@@ -68,6 +68,7 @@ If however the PSNR of the filtered images is lower than the original images
 then the dissimilarity of the filtered images is higher than that of the original ones 
 which means the adaptive threshold operation has rendered them too dissimilar
 hence they are merged in 0.3(of the thresholded image) and 0.7(of the inverted gradient) weighted addition"""
+#can be put in a iterable method to dtermine the set of weights for which the image is sharpest
 if d<=psnr(img,gradient):
 	imgF = cv2.addWeighted(imgbinary, 0.3, edges_inv, 0.7, 0)
 	
