@@ -21,7 +21,7 @@ Step 3: Define Kernel...............................(01)
 Step 4: clo=Closing(‘Image’,kernel).................(02)
 Step 5: dil=Dilation(clo,kernel)....................(03)
 Step 6: grad=Gradient(dil,kernel)...................(04)
-Step 7: edge_inv= grad
+Step 7: edge_inv=~grad
 Step 8: Procedure psnr(imgO,imgF)
 	8.1: mse=mean()
 	8.2: IF mse==0
